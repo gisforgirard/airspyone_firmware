@@ -134,6 +134,6 @@ FORCE:
 # Anything that depends on FORCE will be considered out-of-date
 %.hdr: FORCE
 	echo Creating $@
-	python ../scripts/airspy_fw-version.py ./$@
+	python3 ../scripts/airspy_fw-version.py ./$@
 
 -include $(OBJ:.o=.d)
