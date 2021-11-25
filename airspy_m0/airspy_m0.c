@@ -73,13 +73,13 @@ volatile airspy_mcore_t *set_packing = (airspy_mcore_t *)((&cm0_data_share)+2);
 uint8_t* const usb_bulk_buffer = (uint8_t*)0x20004000;
 
 const char version_string[] = " " AIRSPY_FW_GIT_TAG " " AIRSPY_FW_CHECKIN_DATE;
-
+/*
 typedef struct {
   uint32_t freq_hz;
 } set_freq_params_t;
 
 set_freq_params_t set_freq_params;
-
+*/
 typedef struct {
   uint32_t freq_hz;
   uint32_t divider;
